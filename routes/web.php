@@ -35,3 +35,16 @@ Route::get('/tables',['as'=>'tables.index','uses'=> 'TablesController@tables']);
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
 
 Route::post('/rent',['as' => 'rent.store', 'uses' => 'RentController@store']);
+
+Route::get('/house',['as'=>'house.index','uses'=> 'HouseController@house']);
+
+Route::auth();
+Auth::routes();
+
+Route::get('/home', 'HouseController@house')->name('house');
+
+Route::get('/rentmanager' , ['as' => 'rentmanager.index' , 'uses' => 'RentManagerController@index']);
+
+Route::post('/rent',['as' => 'rent.store', 'uses' => 'RentController@store']);
+
+Route::delete('rentmanager/{id}',['as'=>'rentmanager.destroy','uses'=>'RentManagerController@destroy']);
