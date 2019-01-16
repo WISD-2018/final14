@@ -24,7 +24,6 @@
 				<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 					<form role="form" class="register-form">
 						<h2>Please Sign Up <small>It's free and always will be.</small></h2>
-						<hr class="colorgraph">
 						<div class="row">
 
 							<div class="col-xs-12 col-sm-6 col-md-6">
@@ -69,7 +68,6 @@
 							</div>
 						</div>
 
-						<hr class="colorgraph">
 						<div class="row">
 							<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-theme btn-block btn-lg" tabindex="7"></div>
 							<div class="col-xs-12 col-md-6">Already have an account? <a href="loginmanager.blade.php">Sign In</a></div>
