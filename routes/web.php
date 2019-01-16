@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/',['as'=>'home.index','uses'=> 'HomeController@home']);
+Route::get('/',['as'=>'house.index','uses'=> 'HouseController@house']);
 
 Route::get('/rentmanager',['as'=>'rentmanager.index','uses'=> 'RentManagerController@rentmanager']);
 
@@ -35,3 +35,10 @@ Route::get('/tables',['as'=>'tables.index','uses'=> 'TablesController@tables']);
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
 
 Route::post('/rent',['as' => 'rent.store', 'uses' => 'RentController@store']);
+Auth::routes();
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HouseController@index')->name('home');
