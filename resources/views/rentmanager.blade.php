@@ -94,15 +94,15 @@
 					<tbody>
 					@foreach($rents as $rent)
 						<tr>
-							<td>{{$apply->id}}</td>
-							<td>{{$apply->site_id}}</td>
-							<td>{{$apply->user_class}}</td>
-							<td>{{$apply->user_name}}</td>
-							<td>{{$apply->user_phone}}</td>
-							<td>{{$apply->req_date}}</td>
-							<td>{{$apply->req_starttime}}</td>
-							<td>{{$apply->req_endtime}}</td>
-							<td>{{$apply->req_rentreason}}</td>
+							<td>{{$rent->id}}</td>
+							<td>{{$rent->site_id}}</td>
+							<td>{{$rent->user_class}}</td>
+							<td>{{$rent->user_name}}</td>
+							<td>{{$rent->user_phone}}</td>
+							<td>{{$rent->req_date}}</td>
+							<td>{{$rent->req_starttime}}</td>
+							<td>{{$rent->req_endtime}}</td>
+							<td>{{$rent->req_rentreason}}</td>
 							<td>
 								{{--<a href="{{route('applymanager.index',$apply->id)}}">編輯</a>--}}
 								{{--/--}}
