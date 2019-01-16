@@ -7,6 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
+                <hr class="colorgraph">
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -51,6 +52,7 @@
                             </div>
                         </div>
 
+                        <hr class="colorgraph">
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
