@@ -64,15 +64,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="{{route('userhome.index')}}"><img src="{{asset('img/2.png')}}" alt="" width="250" height="100" /></a>
+                    <a href="{{route('house.index')}}"><img src="{{asset('img/2.png')}}" alt="" width="250" height="100" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
 
 
+<<<<<<< HEAD
                         <li><a href='{{ route('home.index') }}'>首頁</a></li>
                         <li><a href='{{ route('rent.index') }}'>申請場地</a></li>
                         <li><a href='{{ route('rentmanager.index') }}'>場地申請管理</a></li>
+=======
+                        <li><a href='{{ route('house.index') }}'>首頁</a></li>
+                        <li><a href='{{ route('rent.index') }}'>租借</a></li>
+                        <li><a href='{{ route('rentmanager.index') }}'>租借單管理</a></li>
+>>>>>>> fc1add926ab9fefc05f06d930300a4f2c01ea451
                         <li><a href='{{ route('login.index') }}'>登入</a></li>
                         <li><a href='{{ route('register.index') }}'>註冊</a></li>
                     </ul>

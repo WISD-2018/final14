@@ -16,15 +16,11 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/',['as'=>'home.index','uses'=> 'HomeController@home']);
+Route::get('/',['as'=>'app.index','uses'=> 'AppController@app']);
 
 Route::get('/rentmanager',['as'=>'rentmanager.index','uses'=> 'RentManagerController@rentmanager']);
 
 Route::get('/rent',['as'=>'rent.index','uses'=> 'RentController@rent']);
-
-Route::get('/register',['as'=>'register.index','uses'=> 'RegisterController@register']);
-
-Route::get('/login',['as'=>'login.index','uses'=> 'LoginController@login']);
 
 Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
 
