@@ -18,6 +18,7 @@
                         </div>
 
 
+						{{--采風堂--}}
 						<div id="grid-container" class="cbp-l-grid-projects">
 							<ul>
 								<li class="cbp-item graphic">
@@ -28,13 +29,14 @@
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
-													<a href="img/works/123.png" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="<a href='{{ route('rent.index') }}'>申請租借采風堂</a>">view larger</a>
+													<a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看場地狀態 </a>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="cbp-l-grid-projects-title">采風堂</div>
 								</li>
+								{{--匯川堂--}}
 								<li class="cbp-item web-design logo">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
@@ -43,7 +45,7 @@
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
-													<a href="img/works/456.png" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="<a href='{{ route('rent.index') }}'>申請租借匯川堂</a>">view larger</a>
+													<a href='{{ route('two.index') }}' class="cbp-l-caption-buttonLeft" > 查看場地狀態 </a>
 												</div>
 											</div>
 										</div>

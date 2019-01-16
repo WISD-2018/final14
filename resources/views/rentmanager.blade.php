@@ -83,7 +83,7 @@
 						<th>日期</th>
 						<th>開始時間</th>
 						<th>結束時間</th>
-						<th>申請場地</th>
+						<th>場地名稱</th>
 						<th>班級</th>
 						<th>姓名</th>
 						<th>手機號碼</th>
@@ -109,7 +109,7 @@
 								<form action="{{ route('rentmanager.destroy', $rent->id) }}" method="POST">
 									{{ csrf_field() }}
 									{{ method_field('DELETE') }}
-									<button class="btn btn-link">取消申請</button>
+									<button class="btn btn-success btn-link">取消申請</button>
 								</form>
 							</td>
 						</tr>

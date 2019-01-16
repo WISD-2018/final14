@@ -30,8 +30,6 @@ Route::get('/tables',['as'=>'tables.index','uses'=> 'TablesController@tables']);
 
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
 
-Route::post('/rent',['as' => 'rent.store', 'uses' => 'RentController@store']);
-
 Route::get('/house',['as'=>'house.index','uses'=> 'HouseController@house']);
 
 Route::auth();
@@ -44,3 +42,17 @@ Route::get('/rentmanager' , ['as' => 'rentmanager.index' , 'uses' => 'RentManage
 Route::post('/rent',['as' => 'rent.store', 'uses' => 'RentController@store']);
 
 Route::delete('rentmanager/{id}',['as'=>'rentmanager.destroy','uses'=>'RentManagerController@destroy']);
+
+//采風堂
+Route::get('/one',['as'=>'one.index','uses'=> 'OneController@one']);
+
+Route::get('/one',['as'=>'one.index','uses'=> 'OneController@index']);
+
+Route::delete('/one/{id}',['as'=>'one.destroy','uses'=> 'OneController@destroy']);
+
+//匯川堂
+Route::get('/two',['as'=>'two.index','uses'=> 'TwoController@one']);
+
+Route::get('/two',['as'=>'two.index','uses'=> 'TwoController@index']);
+
+Route::delete('/two/{id}',['as'=>'two.destroy','uses'=> 'TwoController@destroy']);
