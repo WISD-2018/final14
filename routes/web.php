@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/',['as'=>'house.index','uses'=> 'AppController@app']);
+Route::get('/',['as'=>'app.index','uses'=> 'AppController@app']);
 
 Route::get('/rentmanager',['as'=>'rentmanager.index','uses'=> 'RentManagerController@rentmanager']);
 
@@ -32,10 +32,13 @@ Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history
 
 Route::get('/house',['as'=>'house.index','uses'=> 'HouseController@house']);
 
-
 Route::auth();
 Auth::routes();
 
 Route::get('/home', 'HouseController@house')->name('house');
 
+Route::get('/rentmanager' , ['as' => 'rentmanager.index' , 'uses' => 'RentManagerController@index']);
+
 Route::post('/rent',['as' => 'rent.store', 'uses' => 'RentController@store']);
+
+Route::delete('rentmanager/{id}',['as'=>'rentmanager.destroy','uses'=>'RentManagerController@destroy']);
