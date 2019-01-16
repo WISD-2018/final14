@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sailor - Bootstrap 3 corporate template</title>
+    <title>場地租借系統</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Bootstrap 3 template for corporate business" />
     <!-- css -->
@@ -39,9 +39,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <ul class="topleft-info">
-                            <li><i class="fa fa-phone"></i> +62 088 999 123</li>
-                        </ul>
+
                     </div>
                     <div class="col-md-6">
                         <div id="sb-search" class="sb-search">
@@ -66,15 +64,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.blade.php"><img src="{{asset('img/logo.png')}}" alt="" width="199" height="52" /></a>
+                    <a href="home.blade.php"><img src="{{asset('img/2.png')}}" alt="" width="250" height="100" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
 
 
                         <li><a href='{{ route('home.index') }}'>首頁</a></li>
-                        <li><a href='{{ route('rent.index') }}'>申請</a></li>
-                        <li><a href='{{ route('rentmanager.index') }}'>申請管理</a></li>
+                        <li><a href='{{ route('rent.index') }}'>租借</a></li>
+                        <li><a href='{{ route('rentmanager.index') }}'>租借單管理</a></li>
                     </ul>
                 </div>
             </div>
@@ -82,6 +80,6 @@
     </header>
     <!-- end header -->
 
-    @yield('content')
-
+@yield('content')
+    @include('layouts.partials.footer')
 </div>
