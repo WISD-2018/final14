@@ -103,7 +103,7 @@
 
 
 
-	</div>
+
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 	<!-- javascript
     ================================================== -->

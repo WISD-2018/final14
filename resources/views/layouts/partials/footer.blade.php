@@ -6,7 +6,7 @@
                 <div class="widget">
                     <h4>頁面連結</h4>
                     <ul class="link-list">
-                        <li><a href="{{ route('home.index') }}">首頁</a></li>
+                        <li><a href="{{ route('userhome.index') }}">首頁</a></li>
                         <li><a href="{{ route('rentmanager.index') }}">租借</a></li>
                         <li><a href='{{ route('rent.index') }}'>租借單管理</a></li>
                     </ul>

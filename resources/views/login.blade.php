@@ -56,7 +56,6 @@
 
 
 
-	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 	<!-- javascript
     ================================================== -->
@@ -75,7 +74,5 @@
 	<script src="js/custom.js"></script>
 
 
-	</body>
 
-	</html>
 @endsection

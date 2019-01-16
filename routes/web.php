@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/',['as'=>'home.index','uses'=> 'HomeController@home']);
+Route::get('/',['as'=>'userhome.index','uses'=> 'UserHomeController@home']);
 
 Route::get('/rentmanager',['as'=>'rentmanager.index','uses'=> 'RentManagerController@rentmanager']);
 
