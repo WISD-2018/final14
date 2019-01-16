@@ -14,7 +14,7 @@ class TwoController extends Controller
 
     public function index()
     {
-        $rent=Rent::where('site_id', '匯川堂')->get();
+        $rents=Rent::where('site_id', '匯川堂')->get();
         return view('two',compact('rents'));
     }
 

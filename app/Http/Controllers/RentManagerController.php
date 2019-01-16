@@ -13,7 +13,7 @@ class RentManagerController extends Controller
     }
     public function index()
     {
-        $remt=Rent::all();
+        $rents=Rent::all();
         return view('rentmanager',compact('rents'));
     }
 

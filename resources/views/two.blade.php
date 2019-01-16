@@ -101,13 +101,13 @@
 					</tr>
 					</thead>
 					<tbody>
-					@foreach($applys as $apply)
+					@foreach($rents as $rent)
 						<tr>
-							<td>{{$apply->id}}</td>
-							<td>{{$apply->site_id}}</td>
-							<td>{{$apply->req_date}}</td>
-							<td>{{$apply->req_starttime}}</td>
-							<td>{{$apply->req_endtime}}</td>
+							<td>{{$rent->id}}</td>
+							<td>{{$rent->site_id}}</td>
+							<td>{{$rent->req_date}}</td>
+							<td>{{$rent->req_starttime}}</td>
+							<td>{{$rent->req_endtime}}</td>
 						</tr>
 					@endforeach
 					</tbody>

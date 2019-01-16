@@ -14,7 +14,7 @@ class OneController extends Controller
 
     public function index()
     {
-        $rent=Rent::where('site_id', '采風堂')->get();
+        $rents=Rent::where('site_id', '采風堂')->get();
         return view('one',compact('rents'));
     }
 
