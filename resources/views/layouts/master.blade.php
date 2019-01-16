@@ -70,7 +70,7 @@
                     <ul class="nav navbar-nav">
 
 
-                        <li><a href='{{ route('userhome.index') }}'>首頁</a></li>
+                        <li><a href='{{ route('home.index') }}'>首頁</a></li>
                         <li><a href='{{ route('rent.index') }}'>租借</a></li>
                         <li><a href='{{ route('rentmanager.index') }}'>租借單管理</a></li>
                         <li><a href='{{ route('login.index') }}'>登入</a></li>

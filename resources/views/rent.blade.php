@@ -51,7 +51,6 @@
 						{{--場地--}}
 						<div class="form-group">
 							<select name="RentPlace" class="form-control" >
-								　<option>申請場地</option>
 								　<option value="采風堂">采風堂</option>
 								　<option value="匯川堂">匯川堂</option>
 							</select>

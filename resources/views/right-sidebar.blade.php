@@ -63,14 +63,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-						<a class="navbar-brand" href="userhome.blade.php"><img src="img/logo.png" alt="" width="199" height="52" /></a>
+						<a class="navbar-brand" href="home.blade.php"><img src="img/logo.png" alt="" width="199" height="52" /></a>
 					</div>
 					<div class="navbar-collapse collapse ">
 						<ul class="nav navbar-nav">
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Home <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu">
-									<li><a href="userhome.blade.php">Home slider 1</a></li>
+									<li><a href="home.blade.php">Home slider 1</a></li>
 									<li><a href="index2.html">Home slider 2</a></li>
 
 								</ul>
