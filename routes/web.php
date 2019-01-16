@@ -23,6 +23,7 @@ Route::get('/rentmanager',['as'=>'rentmanager.index','uses'=> 'RentManagerContro
 Route::get('/rent',['as'=>'rent.index','uses'=> 'RentController@rent']);
 
 Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
+Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@Show']);
 
 Route::get('/cards',['as'=>'cards.index','uses'=> 'CardsController@cards']);
 
