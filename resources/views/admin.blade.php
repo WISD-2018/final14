@@ -28,6 +28,7 @@
             <th>req_starttime</th>
             <th>req_endtime</th>
             <th>req_rentreason</th>
+            <th>status</th>
             <th>功能</th>
           </tr>
           </thead>
@@ -42,6 +43,7 @@
             <th>req_starttime</th>
             <th>req_endtime</th>
             <th>req_rentreason</th>
+            <th>status</th>
             <th>功能</th>
           </tr>
           </tfoot>
@@ -59,6 +61,7 @@
               <td>{{$rent->req_starttime}}</td>
               <td>{{$rent->req_endtime}}</td>
               <td>{{$rent->req_rentreason}}</td>
+              <td>{{($rent->status)?'yes':'not'}}</td>
               <td>
 
                 <form method="post" action="/change">

@@ -26,6 +26,7 @@ class CreateRentsTable extends Migration
             $table->string('req_starttime');
             $table->string('req_endtime');
             $table->string('req_rentreason');
+            $table->boolean('status')->default(0);
 
             $table->timestamps();
         });
