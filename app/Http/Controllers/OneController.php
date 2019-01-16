@@ -18,9 +18,15 @@ class OneController extends Controller
         return view('one',compact('rents'));
     }
 
-    public function destroy($id)
+    public function page()
     {
-        Rent::destroy($id);
-        return redirect()->route('one.index');
+        return view('admin.one');
     }
+
+    public function show()
+    {
+        $rents=Rent::where('site_id', '采風堂')->get();
+        return view('admin.one',compact('rents'));
+    }
+
 }

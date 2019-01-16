@@ -18,11 +18,15 @@ class TwoController extends Controller
         return view('two',compact('rents'));
     }
 
-    public function destroy($id)
+    public function page()
     {
-        Rent::destroy($id);
-        return redirect()->route('two.index');
+        return view('admin.two');
     }
 
+    public function show()
+    {
+        $rents=Rent::where('site_id', '匯川堂')->get();
+        return view('admin.two',compact('rents'));
+    }
 
 }

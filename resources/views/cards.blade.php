@@ -17,8 +17,8 @@
               </div>
               <div class="mr-5">采風堂</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">查看狀態</span>
+              <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+                  <span class="float-left">查看借用狀況</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
               </span>
@@ -34,8 +34,8 @@
               </div>
               <div class="mr-5">匯川堂</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">查看狀態</span>
+              <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+                  <span class="float-left">查看借用狀況</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
               </span>
