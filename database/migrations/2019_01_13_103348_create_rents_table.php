@@ -17,7 +17,7 @@ class CreateRentsTable extends Migration
             $table->increments('id');
 
             //建立資料欄位及型態
-            $table->unsignedInteger('user_id');
+            //$table->unsignedInteger('user_id');
             $table->string('site_id');
             $table->string('user_class');
             $table->string('user_name');

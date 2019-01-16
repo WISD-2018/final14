@@ -10,11 +10,20 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<h2>場 地 使 用 申 請 表 </h2>
 
+					{{--資料若建立成功,則會跳出成功的訊息--}}
+					@if(session('response'))
+						<div class="alert alert-success">{{session('response')}}</div>
+					@endif
+
+					<h2>場 地 使 用 申 請 表 </h2>
+					<hr class="colorgraph">
 					<div id="sendmessage">Your message has been sent. Thank you!</div>
 					<div id="errormessage"></div>
-					<form action="" method="post" role="form" class="contactForm">
+
+					<form action="/rent" method="POST" role="form" >
+
+						{{ csrf_field() }}
 						{{--日期--}}
 						<div class="col-xs-4 col-sm-2 col-md-2">
 							<div class="form-group">
@@ -23,7 +32,7 @@
 						</div>
 						<div class="col-xs-20 col-sm-10 col-md-10">
 							<div class="form-group">
-								<input type="date" name="name" class="form-control" id="name"  value="<?php echo date("Y-m-d");?>">
+								<input type="date" name="req_date" class="form-control"   value="<?php echo date("Y-m-d");?>">
 							</div>
 						</div>
 						{{--開始時間--}}
@@ -34,7 +43,7 @@
 						</div>
 						<div class="col-xs-20 col-sm-10 col-md-10">
 							<div class="form-group">
-								<input type="time" name="starttime" class="form-control" id="starttime" value="08:00"/>
+								<input type="time" name="req_starttime" class="form-control"  value="08:00">
 							</div>
 						</div>
 						{{--結束時間--}}
@@ -45,12 +54,12 @@
 						</div>
 						<div class="col-xs-20 col-sm-10 col-md-10">
 							<div class="form-group">
-								<input type="time" name="endtime" class="form-control" id="endtime" value="22:00"/>
+								<input type="time" name="req_endtime" class="form-control"  value="22:00">
 							</div>
 						</div>
 						{{--場地--}}
 						<div class="form-group">
-							<select name="RentPlace" class="form-control" >
+							<select name="site_id" class="form-control" >
 								　<option value="采風堂">采風堂</option>
 								　<option value="匯川堂">匯川堂</option>
 							</select>
@@ -58,29 +67,27 @@
 						</div>
 						{{--班級--}}
 						<div class="form-group">
-							<input type="text" name="name" class="form-control" id="name" placeholder="班級" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-							<div class="validation"></div>
+							<input name="user_class" class="form-control" placeholder="請輸入班級">
 						</div>
 						{{--姓名--}}
-						<div class="form-group">
-							<input type="text" name="name" class="form-control" id="name" placeholder="姓名" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
-							<div class="validation"></div>
+						<div class="col-xs-24 col-sm-12 col-md-12">
+							<div class="form-group">
+								<input name="user_name" class="form-control" placeholder="請輸入姓名">
+							</div>
+							{{--手機--}}
+							<div class="form-group">
+								<input name="user_phone" class="form-control" placeholder="請輸入手機號碼">
+							</div>
+							{{--活動簡述--}}
+							<div class="form-group">
+								<input name="req_rentreason" class="form-control" placeholder="活動簡述">
+							</div>
+
+
+							<div class="text-center">
+								<button type="submit" class="btn btn-theme btn-block btn-md">申請</button>
+							</div>
 						</div>
-						{{--手機--}}
-						<div class="form-group">
-							<input type="text" name="name" class="form-control" id="name" placeholder="手機號碼" data-rule="minlen:10" data-msg="Please enter at least 10 chars" />
-							<div class="validation"></div>
-						</div>
-						{{--活動簡述--}}
-						<div class="form-group">
-							<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="請簡述活動內容" placeholder="活動簡述"></textarea>
-							<div class="validation"></div>
-						</div>
-
-
-
-
-						<div class="text-center"><button type="submit" class="btn btn-theme btn-block btn-md">申請</button></div>
 					</form>
 
 
