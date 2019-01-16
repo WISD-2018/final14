@@ -4,179 +4,81 @@
 
 @section('content')
 
-		<section id="content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h4 class="heading">Recent Works</h4>
 
-						<div id="filters-container" class="cbp-l-filters-button">
-							<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
-								<div class="cbp-filter-counter"></div>
-							</div>
-							<div data-filter=".identity" class="cbp-filter-item">Identity
-								<div class="cbp-filter-counter"></div>
-							</div>
-							<div data-filter=".web-design" class="cbp-filter-item">Web Design
-								<div class="cbp-filter-counter"></div>
-							</div>
-							<div data-filter=".graphic" class="cbp-filter-item">Graphic
-								<div class="cbp-filter-counter"></div>
-							</div>
-							<div data-filter=".logo" class="cbp-filter-item">Logo
-								<div class="cbp-filter-counter"></div>
-							</div>
+	<section id="content">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2>場 地 使 用 申 請 表 </h2>
+
+					<div id="sendmessage">Your message has been sent. Thank you!</div>
+					<div id="errormessage"></div>
+					<form action="" method="post" role="form" class="contactForm">
+						{{--日期--}}
+						<div class="form-group">
+							<input type="date" name="name" class="form-control" id="name" />
+							<div class="validation"></div>
+						</div>
+						{{--場地--}}
+						<div class="form-group">
+							<select name="RentPlace" class="form-control" >
+								　<option>申請場地</option>
+								　<option value="采風堂">采風堂</option>
+								　<option value="匯川堂">匯川堂</option>
+							</select>
+							<div class="validation"></div>
+						</div>
+						{{--班級--}}
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" id="name" placeholder="班級" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+							<div class="validation"></div>
+						</div>
+						{{--姓名--}}
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" id="name" placeholder="姓名" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
+							<div class="validation"></div>
+						</div>
+						{{--手機--}}
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" id="name" placeholder="手機號碼" data-rule="minlen:10" data-msg="Please enter at least 4 chars" />
+							<div class="validation"></div>
+						</div>
+						{{--開始時間--}}
+						<div class="form-group">
+							<input type="time" name="name" class="form-control" id="name"  />
+							<div class="validation"></div>
+						</div>
+						{{--結束時間--}}
+						<div class="form-group">
+							<input type="time" name="name" class="form-control" id="name"  />
+							<div class="validation"></div>
+						</div>
+						{{--活動簡述--}}
+						<div class="form-group">
+							<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="活動簡述"></textarea>
+							<div class="validation"></div>
 						</div>
 
 
-						<div id="grid-container" class="cbp-l-grid-projects">
-							<ul>
-								<li class="cbp-item graphic">
-									<div class="cbp-caption">
-										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/1.jpg" alt="" />
-										</div>
-										<div class="cbp-caption-activeWrap">
-											<div class="cbp-l-caption-alignCenter">
-												<div class="cbp-l-caption-body">
-													<a href="img/works/1big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cbp-l-grid-projects-title">Dashboard</div>
-									<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
-								</li>
-								<li class="cbp-item web-design logo">
-									<div class="cbp-caption">
-										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/2.jpg" alt="" />
-										</div>
-										<div class="cbp-caption-activeWrap">
-											<div class="cbp-l-caption-alignCenter">
-												<div class="cbp-l-caption-body">
-													<a href="img/works/2big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cbp-l-grid-projects-title">World Clock Widget</div>
-									<div class="cbp-l-grid-projects-desc">Logo / Web Design</div>
-								</li>
-								<li class="cbp-item graphic logo">
-									<div class="cbp-caption">
-										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/3.jpg" alt="" />
-										</div>
-										<div class="cbp-caption-activeWrap">
-											<div class="cbp-l-caption-alignCenter">
-												<div class="cbp-l-caption-body">
 
-													<a href="http://vimeo.com/14912890" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="To-Do Dashboard<br>by Tiberiu Neamu">view video</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cbp-l-grid-projects-title">To-Do Dashboard</div>
-									<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
-								</li>
-								<li class="cbp-item web-design graphic">
-									<div class="cbp-caption">
-										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/4.jpg" alt="" />
-										</div>
-										<div class="cbp-caption-activeWrap">
-											<div class="cbp-l-caption-alignCenter">
-												<div class="cbp-l-caption-body">
+						{{--<div class="form-group">--}}
+						{{--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />--}}
+						{{--<div class="validation"></div>--}}
+						{{--</div>--}}
+						{{--<div class="form-group">--}}
+						{{--<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />--}}
+						{{--<div class="validation"></div>--}}
+						{{--</div>--}}
 
-													<a href="img/works/4big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cbp-l-grid-projects-title">Events and More</div>
-									<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
-								</li>
-								<li class="cbp-item identity web-design">
-									<div class="cbp-caption">
-										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/5.jpg" alt="" />
-										</div>
-										<div class="cbp-caption-activeWrap">
-											<div class="cbp-l-caption-alignCenter">
-												<div class="cbp-l-caption-body">
+						<div class="text-center"><button type="submit" class="btn btn-theme btn-block btn-md">申請</button></div>
+					</form>
 
-													<a href="img/works/5big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cbp-l-grid-projects-title">WhereTO App</div>
-									<div class="cbp-l-grid-projects-desc">Web Design / Identity</div>
-								</li>
-								<li class="cbp-item identity web-design">
-									<div class="cbp-caption">
-										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/6.jpg" alt="" />
-										</div>
-										<div class="cbp-caption-activeWrap">
-											<div class="cbp-l-caption-alignCenter">
-												<div class="cbp-l-caption-body">
 
-													<a href="img/works/6big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
-									<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
-								</li>
-								<li class="cbp-item graphic logo">
-									<div class="cbp-caption">
-										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/7.jpg" alt="" />
-										</div>
-										<div class="cbp-caption-activeWrap">
-											<div class="cbp-l-caption-alignCenter">
-												<div class="cbp-l-caption-body">
-
-													<a href="img/works/7big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
-									<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
-								</li>
-								<li class="cbp-item graphic logo">
-									<div class="cbp-caption">
-										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/8.jpg" alt="" />
-										</div>
-										<div class="cbp-caption-activeWrap">
-											<div class="cbp-l-caption-alignCenter">
-												<div class="cbp-l-caption-body">
-
-													<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
-									<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
-								</li>
-							</ul>
-						</div>
-
-						<div class="cbp-l-loadMore-button">
-							<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
-						</div>
-
-					</div>
 				</div>
 			</div>
-		</section>
-
+		</div>
+	</section>
 
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 	<!-- javascript
@@ -193,10 +95,11 @@
 	<script src="js/jquery.cubeportfolio.min.js"></script>
 	<script src="js/google-code-prettify/prettify.js"></script>
 	<script src="js/animate.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
 	<script src="js/custom.js"></script>
 
 
-</body>
+	<script src="contactform/contactform.js"></script>
 
-</html>
+
 @endsection

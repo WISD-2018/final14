@@ -28,7 +28,7 @@
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
-													<a href="img/works/123.png" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+													<a href="img/works/123.png" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="<a href='{{ route('rent.index') }}'>申請租借采風堂</a>">view larger</a>
 												</div>
 											</div>
 										</div>
@@ -43,7 +43,7 @@
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
-													<a href="img/works/456.png" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
+													<a href="img/works/456.png" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="<a href='{{ route('rent.index') }}'>申請租借匯川堂</a>">view larger</a>
 												</div>
 											</div>
 										</div>
@@ -53,9 +53,7 @@
 							</ul>
 						</div>
 
-						<div class="cbp-l-loadMore-button">
-							<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
-						</div>
+
 
 					</div>
 				</div>
