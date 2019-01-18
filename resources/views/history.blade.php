@@ -4,6 +4,12 @@
 
 @section('content')
     <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">管理端</a>
+        </li>
+        <li class="breadcrumb-item active">歷史紀錄</li>
+    </ol>
     <!-- Example DataTables Card-->
     <div class="card mb-3">
         <div class="card-header">

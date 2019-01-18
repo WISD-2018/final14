@@ -3,9 +3,14 @@
 @section('title', 'Clean Blog')
 
 @section('content')
-      <!-- Breadcrumbs-->
-      <h1>場地狀態</h1>
-      <hr>
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">管理端</a>
+        </li>
+        <li class="breadcrumb-item active">場地狀態</li>
+    </ol>
+    <hr>
       <!-- Icon Cards-->
       <div class="row">
           {{--場地1--}}

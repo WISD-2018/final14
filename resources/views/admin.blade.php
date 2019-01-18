@@ -3,6 +3,13 @@
 @section('title', 'Clean Blog')
 
 @section('content')
+  <!-- Breadcrumbs-->
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="#">管理端</a>
+    </li>
+    <li class="breadcrumb-item active">審核場地申請</li>
+  </ol>
   <!-- Example DataTables Card-->
   <div class="card mb-3">
     <div class="card-header">
