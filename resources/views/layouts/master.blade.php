@@ -68,7 +68,7 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li><a href='{{ route('home.index') }}'>首頁</a></li>
+                        <li><a href='{{ route('house.index') }}'>首頁</a></li>
                         <li><a href='{{ route('rent.index') }}'>申請場地</a></li>
                         <li><a href='{{ route('rentmanager.index') }}'>場地申請管理</a></li>
                     </ul>

@@ -66,7 +66,7 @@
 						</div>
 						{{--班級--}}
 						<div class="form-group">
-							<input name="user_class" class="form-control" placeholder="請輸入班級" value="{{ Auth::user()->user_class }}">
+							<Input name="user_class" class="form-control" placeholder="請輸入班級" value="{{ Auth::user()->user_class }}">
 						</div>
 						{{--姓名--}}
 						<div class="col-xs-24 col-sm-12 col-md-12">
