@@ -17,7 +17,6 @@
 					@endif
 
 					<h2>場 地 使 用 申 請 表 </h2>
-					<hr class="colorgraph">
 					<div id="sendmessage">Your message has been sent. Thank you!</div>
 					<div id="errormessage"></div>
 

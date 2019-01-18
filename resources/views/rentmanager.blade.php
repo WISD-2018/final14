@@ -96,13 +96,13 @@
 					@foreach($rents as $rent)
 						<tr>
 							<td>{{$rent->id}}</td>
+							<td>{{$rent->req_date}}</td>
+							<td>{{$rent->req_starttime}}</td>
+							<td>{{$rent->req_endtime}}</td>
 							<td>{{$rent->site_id}}</td>
 							<td>{{$rent->user_class}}</td>
 							<td>{{$rent->user_name}}</td>
 							<td>{{$rent->user_phone}}</td>
-							<td>{{$rent->req_date}}</td>
-							<td>{{$rent->req_starttime}}</td>
-							<td>{{$rent->req_endtime}}</td>
 							<td>{{$rent->req_rentreason}}</td>
 							<td>{{($rent->status)?'審核成功':'尚未審核'}}</td>
 							<td>

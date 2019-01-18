@@ -18,7 +18,6 @@
           <div class="card text-white bg-primary o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-comments"></i>
               </div>
               <div class="mr-5">采風堂</div>
             </div>
@@ -32,14 +31,14 @@
         </div>
           {{--場地2--}}
         <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-warning o-hidden h-100">
+            <div class="card text-white bg-primary o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
                 <i class="fa fa-fw fa-list"></i>
               </div>
               <div class="mr-5">匯川堂</div>
             </div>
-              <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+                <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.two.index') }}'>
                   <span class="float-left">查看借用狀況</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
