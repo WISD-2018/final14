@@ -14,7 +14,7 @@ class AdminController extends Controller
 
     public function Show()
     {
-        $rents=Rent::all();
+        $rents=Rent::where('status', '0')->get();
         return view('admin',compact('rents'));
     }
 
@@ -24,7 +24,7 @@ class AdminController extends Controller
         $fix->status=true;
         $fix->save();
         $rents = Rent::all()->where('id',$request->id);
-        return view('admin',compact('rents'));
+        return redirect()->route('admin.index');
 
     }
 
