@@ -54,7 +54,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href='{{ route('house.index') }}'><img src="{{asset('img/2.png')}}" alt="" width="250" height="100" /></a>
+					<a href='{{ route('house.index') }}'><img src="{{asset('img/3.png')}}" alt="" width="250" height="100" /></a>
 				</div>
 				<div class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav">
