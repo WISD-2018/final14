@@ -32,6 +32,7 @@
                     </tr>
                     </thead>
                     <tfoot>
+                    @foreach($rents as $rent)
                     <tr>
                         <td>{{$rent->id}}</td>
                         <td>{{$rent->site_id}}</td>
@@ -44,6 +45,7 @@
                         <td>{{$rent->req_rentreason}}</td>
                         <td>{{($rent->status)?'審核通過':'不通過'}}</td>
                     </tr>
+                    @endforeach
                     </tfoot>
 
                 </table>
