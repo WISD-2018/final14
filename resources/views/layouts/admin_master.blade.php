@@ -67,5 +67,7 @@
     <div class="container-fluid">
 
         @yield('content')
+        @include('layouts.partials.admin-footer')
+
     </div>
 </div>
