@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Rent;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class RentManagerController extends Controller
@@ -13,7 +14,7 @@ class RentManagerController extends Controller
     }
     public function index()
     {
-        $rents=Rent::all();
+        $rents=Rent::where('user_name',  Auth::user()->name )->get();
         return view('rentmanager',compact('rents'));
     }
 

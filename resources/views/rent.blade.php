@@ -72,7 +72,7 @@
 						{{--姓名--}}
 						<div class="col-xs-24 col-sm-12 col-md-12">
 							<div class="form-group">
-								<input name="user_name" class="form-control" placeholder="請輸入姓名">
+								<Input name="user_name" class="form-control" placeholder="請輸入姓名" value="{{ Auth::user()->name }}">
 							</div>
 							{{--手機--}}
 							<div class="form-group">
