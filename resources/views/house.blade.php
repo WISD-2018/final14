@@ -9,7 +9,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h4 class="heading">Recent Works</h4>
 
 						<div id="filters-container" class="cbp-l-filters-button">
 							<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
