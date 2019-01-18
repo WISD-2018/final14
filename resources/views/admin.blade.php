@@ -47,17 +47,9 @@
               <td>{{$rent->req_starttime}}</td>
               <td>{{$rent->req_endtime}}</td>
               <td>{{$rent->req_rentreason}}</td>
-              <td>{{($rent->status)?'yes':'not'}}</td>
+              <td>{{($rent->status)?'審核成功':'尚未審核'}}</td>
               <td>
-
-                <form method="post" action="/change">
-                  <input type="hidden" name="visitaID" value="$applys->id"/>
-                  <button class="btn btn-lg btn-success" type="submit">
-                    update
-                  </button>
-                </form>
-                {{--<button class="btn btn-success btn-update" data-id="{{$apply->status}}">update</button>--}}
-
+                <a href ="{{route('admin.status', ['id'=>$rent->id])}}"class="btn btn-xs btn-white" role="button">check</a>
               </td>
             </tr>
           @endforeach
