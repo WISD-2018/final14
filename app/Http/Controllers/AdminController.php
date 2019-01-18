@@ -18,4 +18,13 @@ class AdminController extends Controller
         return view('admin',compact('rents'));
     }
 
+    public function completed(Request $request)
+    {
+        $fix = Rent::find($request->id);
+        $fix->status=true;
+        $fix->save();
+        $rents = Rent::all()->where('id',$request->id);
+        return view('admin',compact('rents'));
+
+    }
 }
