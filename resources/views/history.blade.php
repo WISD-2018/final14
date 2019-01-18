@@ -42,7 +42,7 @@
                         <td>{{$rent->req_starttime}}</td>
                         <td>{{$rent->req_endtime}}</td>
                         <td>{{$rent->req_rentreason}}</td>
-                        <td>{{($rent->status)?'審核成功':'尚未審核'}}</td>
+                        <td>{{($rent->status)?'審核通過':'不通過'}}</td>
                     </tr>
                     </tfoot>
 
