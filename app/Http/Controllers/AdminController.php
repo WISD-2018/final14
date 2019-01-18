@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Rent;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -14,7 +15,8 @@ class AdminController extends Controller
 
     public function Show()
     {
-        $rents=Rent::where('status', '0')->get();
+        //$rents=Rent::where('status', '0')->get();
+        $rents=Rent::all();
         return view('admin',compact('rents'));
     }
 

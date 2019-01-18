@@ -10,9 +10,7 @@ class RentController extends Controller
 {
     public function rent()
     {
-        $user=Auth::user();
-        $names=$user['name'];
-        return view('rent',compact('names'));
+        return view('rent');
     }
 
     public function store(Request $request)

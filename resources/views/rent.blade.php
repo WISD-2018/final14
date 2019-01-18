@@ -67,16 +67,16 @@
 						</div>
 						{{--班級--}}
 						<div class="form-group">
-							<input name="user_class" class="form-control" placeholder="請輸入班級">
+							<input name="user_class" class="form-control" placeholder="請輸入班級" value="{{ Auth::user()->user_class }}">
 						</div>
 						{{--姓名--}}
 						<div class="col-xs-24 col-sm-12 col-md-12">
 							<div class="form-group">
-								<input name="user_name" class="form-control" placeholder="請輸入姓名">
+								<Input name="user_name" class="form-control" placeholder="請輸入姓名" value="{{ Auth::user()->name }}">
 							</div>
 							{{--手機--}}
 							<div class="form-group">
-								<input name="user_phone" class="form-control" placeholder="請輸入手機號碼">
+								<input name="user_phone" class="form-control" placeholder="請輸入手機號碼"value="{{ Auth::user()->user_phone }}">
 							</div>
 							{{--活動簡述--}}
 							<div class="form-group">

@@ -6,7 +6,7 @@
   <!-- Breadcrumbs-->
   <ol class="breadcrumb">
     <li class="breadcrumb-item">
-      <a href="#">管理端</a>
+      <a href="{{ route('admin.index') }}">管理端</a>
     </li>
     <li class="breadcrumb-item active">審核場地申請</li>
   </ol>
