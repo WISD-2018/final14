@@ -13,6 +13,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                     <tr>
+                        <th width="30" style="text-align: center">id</th>
                         <th>日期</th>
                         <th>開始時間</th>
                         <th>結束時間</th>
@@ -21,20 +22,23 @@
                         <th>姓名</th>
                         <th>手機號碼</th>
                         <th>活動簡述</th>
+                        <th>狀態</th>
                     </tr>
                     </thead>
-                    {{--<tfoot>--}}
-                    {{--<tr>--}}
-                    {{--<th>日期</th>--}}
-                    {{--<th>開始時間</th>--}}
-                    {{--<th>結束時間</th>--}}
-                    {{--<th>申請場地</th>--}}
-                    {{--<th>班級</th>--}}
-                    {{--<th>姓名</th>--}}
-                    {{--<th>手機號碼</th>--}}
-                    {{--<th>活動簡述</th>--}}
-                    {{--</tr>--}}
-                    {{--</tfoot>--}}
+                    <tfoot>
+                    <tr>
+                        <td>{{$rent->id}}</td>
+                        <td>{{$rent->site_id}}</td>
+                        <td>{{$rent->user_class}}</td>
+                        <td>{{$rent->user_name}}</td>
+                        <td>{{$rent->user_phone}}</td>
+                        <td>{{$rent->req_date}}</td>
+                        <td>{{$rent->req_starttime}}</td>
+                        <td>{{$rent->req_endtime}}</td>
+                        <td>{{$rent->req_rentreason}}</td>
+                        <td>{{($rent->status)?'審核成功':'尚未審核'}}</td>
+                    </tr>
+                    </tfoot>
 
                 </table>
             </div>

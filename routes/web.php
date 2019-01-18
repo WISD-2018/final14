@@ -31,6 +31,7 @@ Route::get('/completed',['as' => 'admin.status', 'uses' => 'AdminController@comp
 Route::get('/cards',['as'=>'cards.index','uses'=> 'CardsController@cards']);
 
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
+Route::get('/history', ['as' => 'history.index', 'uses' => 'HistoryController@Show']);
 
 Route::get('/house',['as'=>'house.index','uses'=> 'HouseController@house']);
 
