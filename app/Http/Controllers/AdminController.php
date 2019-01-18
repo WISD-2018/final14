@@ -15,8 +15,7 @@ class AdminController extends Controller
 
     public function Show()
     {
-        //$rents=Rent::where('status', '0')->get();
-        $rents=Rent::all();
+        $rents=Rent::where('status', '0')->get();
         return view('admin',compact('rents'));
     }
 
