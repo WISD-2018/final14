@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SB Admin - Start Bootstrap Template</title>
+    <title>場地申請管理端</title>
     <!-- Bootstrap core CSS-->
     <link href=" {{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -21,7 +21,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="{{ route('tables.index') }}">管理端</a>
+    <a class="navbar-brand" href="{{ route('admin.index') }}">管理端</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,7 +29,7 @@
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             {{--審核場地申請--}}
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="{{ route('tables.index') }}">
+                <a class="nav-link" href="{{ route('admin.index') }}">
                     <span class="nav-link-text">審核場地申請</span>
                 </a>
             </li>

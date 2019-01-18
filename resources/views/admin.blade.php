@@ -3,17 +3,11 @@
 @section('title', 'Clean Blog')
 
 @section('content')
-  <!-- Breadcrumbs-->
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="#">Dashboard</a>
-    </li>
-    <li class="breadcrumb-item active">Tables</li>
-  </ol>
   <!-- Example DataTables Card-->
   <div class="card mb-3">
     <div class="card-header">
-      <i class="fa fa-table"></i> 場地申請表管理</div>
+      <i class="fa fa-table"></i> 場地申請管理
+    </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
