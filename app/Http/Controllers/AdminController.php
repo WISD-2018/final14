@@ -27,4 +27,10 @@ class AdminController extends Controller
         return view('admin',compact('rents'));
 
     }
+
+    public function destroy($id)
+    {
+        Rent::destroy($id);
+        return redirect()->route('admin.index');
+    }
 }

@@ -7,8 +7,8 @@
 	<title>場地租借系統</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Bootstrap 3 template for corporate business" />
-
 	<!-- css -->
+
 	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
 	<link href="{{asset('plugins/flexslider/flexslider.css')}}" rel="stylesheet" media="screen" />
 	<link href="{{asset('css/cubeportfolio.min.css')}}" rel="stylesheet" />
@@ -19,32 +19,27 @@
 
 	<!-- boxed bg -->
 	<link id="bodybg" href="bodybg/bg2.css" rel="stylesheet" type="text/css" />
+
+	<!-- =======================================================
+    Theme Name: Sailor
+    Theme URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+    ======================================================= -->
+
+
+
+
+
 </head>
 
-
-
 <body>
+
+
+
 <div id="wrapper">
 	<!-- start header -->
 	<header>
-		<div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-
-					</div>
-					<div class="col-md-6">
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search" title="Click to start searching"></span>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="navbar navbar-default navbar-static-top">
 			<div class="container">
@@ -74,22 +69,17 @@
 	<!-- Example DataTables Card-->
 
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			<div class="table-responsive">
+				<hr class="colorgraph">
 				<table class="table table-bordered table-hover">
 					<thead>
 					<tr>
 						<th width="30" style="text-align: center">#</th>
+						<th>場地名稱</th>
 						<th>日期</th>
 						<th>開始時間</th>
 						<th>結束時間</th>
-						<th>場地名稱</th>
-						<th>班級</th>
-						<th>姓名</th>
-						<th>手機號碼</th>
-						<th>活動簡述</th>
-						<th>審核狀態</th>
-						<th width="100" style="text-align: center">取消申請</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -97,21 +87,9 @@
 						<tr>
 							<td>{{$rent->id}}</td>
 							<td>{{$rent->site_id}}</td>
-							<td>{{$rent->user_class}}</td>
-							<td>{{$rent->user_name}}</td>
-							<td>{{$rent->user_phone}}</td>
 							<td>{{$rent->req_date}}</td>
 							<td>{{$rent->req_starttime}}</td>
 							<td>{{$rent->req_endtime}}</td>
-							<td>{{$rent->req_rentreason}}</td>
-							<td>{{($rent->status)?'審核成功':'尚未審核'}}</td>
-							<td>
-								<form action="{{ route('rentmanager.destroy', $rent->id) }}" method="POST">
-									{{ csrf_field() }}
-									{{ method_field('DELETE') }}
-									<button class="btn btn-success btn-link">取消申請</button>
-								</form>
-							</td>
 						</tr>
 					@endforeach
 					</tbody>

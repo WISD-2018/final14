@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Rent;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class RentController extends Controller
 {
     public function rent()
     {
-        return view('rent');
+        $user=Auth::user();
+        $names=$user['name'];
+        return view('rent',compact('names'));
     }
 
     public function store(Request $request)

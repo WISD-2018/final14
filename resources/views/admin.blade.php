@@ -29,7 +29,7 @@
             <th>結束時間</th>
             <th>活動簡述</th>
             <th>狀態</th>
-            <th>功能</th>
+            <th>審核</th>
           </tr>
           </thead>
 
@@ -49,7 +49,12 @@
               <td>{{$rent->req_rentreason}}</td>
               <td>{{($rent->status)?'審核成功':'尚未審核'}}</td>
               <td>
-                <a href ="{{route('admin.status', ['id'=>$rent->id])}}"class="btn btn-xs btn-white" role="button">check</a>
+                <form action="{{ route('admin.destroy', $rent->id) }}" method="POST">
+                  <a href ="{{route('admin.status', ['id'=>$rent->id])}}"class="btn btn-success " role="button">同意</a>
+                  {{ csrf_field() }}
+                  {{ method_field('DELETE') }}
+                  <button class="btn btn-danger ">拒絕</button>
+                </form>
               </td>
             </tr>
           @endforeach

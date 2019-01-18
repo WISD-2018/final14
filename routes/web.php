@@ -44,6 +44,7 @@ Route::get('/rentmanager' , ['as' => 'rentmanager.index' , 'uses' => 'RentManage
 Route::post('/rent',['as' => 'rent.store', 'uses' => 'RentController@store']);
 
 Route::delete('rentmanager/{id}',['as'=>'rentmanager.destroy','uses'=>'RentManagerController@destroy']);
+Route::delete('admin/{id}',['as'=>'admin.destroy','uses'=>'AdminController@destroy']);
 
 //采風堂
 Route::get('/one',['as'=>'one.index','uses'=> 'OneController@one']);
