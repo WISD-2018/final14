@@ -20,7 +20,7 @@ class CreateRentsTable extends Migration
             //$table->unsignedInteger('user_id');
             $table->string('site_id');
             $table->string('user_class');
-            $table->string('user_name');
+            $table->string('name');
             $table->string('user_phone');
             $table->string('req_date');
             $table->string('req_starttime');
